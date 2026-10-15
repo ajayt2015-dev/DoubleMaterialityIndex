@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Double Materiality 2026 | The Corporate</title>
+  <meta name="description" content="The Corporate's 16 material ESG topics plotted on a double materiality matrix: financial vs impact materiality.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo" aria-label="The Corporate">[ C ] THE CORPORATE</div>
+      <h1 class="title">Double Materiality 2026</h1>
+      <p class="subtitle">16 material topics · Financial vs Impact materiality</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="filters" role="group" aria-label="Show or hide topics by category" id="filters"></div>
+
+    <div class="layout">
+      <section class="panel chart-panel" aria-label="Double materiality matrix">
+        <div class="chart-wrap" id="chartWrap">
+          <svg id="chart" role="group" aria-label="Matrix of 16 topics: Financial Materiality (x, 1 to 5) against Impact Materiality (y, 1 to 5)"></svg>
+          <div class="empty-msg" id="emptyMsg" hidden>No categories selected — turn on E, S or G to show topics.</div>
+        </div>
+      </section>
+
+      <aside class="panel legend-panel" aria-label="Legend">
+        <h2 class="legend-title">Materiality zones</h2>
+        <ul class="legend-list" id="zoneLegend"></ul>
+        <h2 class="legend-title">Topic categories</h2>
+        <ul class="legend-list" id="catLegend"></ul>
+        <p class="legend-note">Hover, tap or Tab to a dot for details. Where dots sit close together they are nudged apart; a thin line leads to each topic's exact score.</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      The Corporate | Double Materiality Assessment | Scores: blended stakeholder average (Employees, Suppliers, Investors, Customers — 25% each), 1.0–5.0 scale.
+      <div class="author">Author: Ajay</div>
+    </div>
+  </footer>
+
+  <div class="tooltip" id="tooltip" role="tooltip" hidden></div>
+
+  <script src="data.js"></script>
+  <script src="selfcheck.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
